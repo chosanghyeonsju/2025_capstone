@@ -15,6 +15,16 @@ spring:
     console:
       enabled: true
       path: /h2-console
+  mvc:
+    view:
+      prefix: /templates/
+      suffix: .html
+  resources:
+    static-locations: classpath:/static/
+  thymeleaf:
+    cache: false
+    prefix: classpath:/templates/
+    suffix: .html
 
 jwt:
   secret: your-secret-key-here-must-be-at-least-256-bits-long
